@@ -62,7 +62,7 @@ obj={
     "request_date":"2024-03-03T05:04:54Z",
     "subscriber":{
         "non_subscriptions":{
-            "com.goodnotes.gn6_one_time_unlock":[
+            "com.goodnotes.gn6_one_time_unlock_3749":[
                 {
                     "is_sandbox":false,
                     "ownership_type":"PURCHASED",
@@ -77,7 +77,7 @@ obj={
         "first_seen":"2024-02-28T02:37:05Z",
         "original_application_version":"469734.405653997",
         "other_purchases":{
-            "com.goodnotes.gn6_one_time_unlock":{
+            "com.goodnotes.gn6_one_time_unlock_3749":{
                 "purchase_date":"2024-03-03T05:01:34Z"
             }
         },
@@ -89,7 +89,7 @@ obj={
             "apple_access":{
                 "grace_period_expires_date":null,
                 "purchase_date":"2024-03-03T05:01:34Z",
-                "product_identifier":"com.goodnotes.gn6_one_time_unlock",
+                "product_identifier":"com.goodnotes.gn6_one_time_unlock_3749",
                 "expires_date":null
             }
         },

@@ -79,21 +79,8 @@ var obj={
     },
     "management_url" : null,
     "subscriptions" : {
-      "rc_promo_crossplatform_access_weekly" : {
-        "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2220-03-06T02:37:50Z",
-        "is_sandbox" : false,
-        "refunded_at" : null,
-        "store_transaction_id" : "90e085f7fef5ffbe7c9656b19b6f0c0a",
-        "unsubscribe_detected_at" : null,
-        "grace_period_expires_date" : null,
-        "period_type" : "normal",
-        "purchase_date" : "2024-02-28T02:37:50Z",
-        "billing_issues_detected_at" : null,
-        "store" : "promotional",
-        "auto_resume_date" : null
-      },
-      "rc_promo_gn5_lifetime" : {
+     
+      "rc_promo_gn6_lifetime" : {
         "original_purchase_date" : "2020-03-08T08:40:37Z",
         "expires_date" : "2220-01-20T08:40:37Z",
         "is_sandbox" : false,
@@ -103,34 +90,6 @@ var obj={
         "grace_period_expires_date" : null,
         "period_type" : "normal",
         "purchase_date" : "2020-03-08T08:40:37Z",
-        "billing_issues_detected_at" : null,
-        "store" : "promotional",
-        "auto_resume_date" : null
-      },
-      "rc_promo_apple_access_weekly" : {
-        "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2220-03-06T02:37:50Z",
-        "is_sandbox" : false,
-        "refunded_at" : null,
-        "store_transaction_id" : "9322911433abcf7f43e302d31bd8021e",
-        "unsubscribe_detected_at" : null,
-        "grace_period_expires_date" : null,
-        "period_type" : "normal",
-        "purchase_date" : "2024-02-28T02:37:50Z",
-        "billing_issues_detected_at" : null,
-        "store" : "promotional",
-        "auto_resume_date" : null
-      },
-      "rc_promo_premium_weekly" : {
-        "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2220-03-06T02:37:50Z",
-        "is_sandbox" : false,
-        "refunded_at" : null,
-        "store_transaction_id" : "f37d45df5f8adbca767f3bad796897cb",
-        "unsubscribe_detected_at" : null,
-        "grace_period_expires_date" : null,
-        "period_type" : "normal",
-        "purchase_date" : "2024-02-28T02:37:50Z",
         "billing_issues_detected_at" : null,
         "store" : "promotional",
         "auto_resume_date" : null

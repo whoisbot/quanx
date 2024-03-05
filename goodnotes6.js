@@ -77,8 +77,6 @@ var obj={
         "grace_period_expires_date" : null
       }
     },
-    "original_purchase_date" : "2020-03-08T08:40:37Z",
-    "original_app_user_id" : "a2d62bad-c199-4f1b-8312-c8141b3ce467",
     "non_subscriptions" : {
       "com.goodnotes.gn6_one_time_unlock_3749" : [
         {

@@ -27,7 +27,6 @@
 
 
 
-^http[s]?:\/\/isi\.csan\.goodnotes\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 
 [mitm] 

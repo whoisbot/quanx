@@ -23,7 +23,7 @@
 
 [mitm] 
 
-hostname=isi.csan.goodnotes.com
+hostname=isi.csan.goodnotes.com.cn
 
 ***********************************/
 

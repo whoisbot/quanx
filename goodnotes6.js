@@ -13,16 +13,12 @@
 > 特别说明：⚠️⚠️⚠️
           本脚本仅供学习交流使用，禁止转载售卖
           ⚠️⚠️⚠️
-        
-<<<<<<< main
 
-=======
->>>>>>> 39b0502
 
 
 [rewrite_local]
   
-# ～GoodNotes6☆解锁会员权限（2023-08-11）@ddgksf2013
+
 
 
 ^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js

@@ -53,8 +53,7 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,api.goodnotes.com
 
 
 var obj={
-    "request_date_ms":1709442294703,
-    "request_date":"2024-03-03T05:04:54Z",
+
     "subscriber":{
         "non_subscriptions":{
             "com.goodnotes.gn6_one_time_unlock_3749":[

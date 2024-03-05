@@ -21,8 +21,8 @@
 
 
 
-^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/subscribers\/[^/]+$ url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
-^http[s]?:\/\/isi\.csan\.goodnotes\.com\/v1\/subscribers\/[^/]+$ url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+^http[s]?:\/\/isi\.csan\.goodnotes\.com\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 
 

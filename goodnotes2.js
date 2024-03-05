@@ -68,17 +68,6 @@ var obj={
           "purchase_date" : "2024-03-03T05:01:34Z",
           "store" : "app_store"
         }
-      ],
-      "com.goodnotes.premium_7dt" : [
-        {
-          "is_sandbox" : false,
-          "ownership_type" : "PURCHASED",
-          "id" : "025227f333",
-          "original_purchase_date" : "2024-02-28T02:37:50Z",
-          "store_transaction_id" : "510001497588768",
-          "purchase_date" : "2024-02-28T02:37:50Z",
-          "store" : "app_store"
-        }
       ]
     },
     "first_seen" : "2024-02-28T02:37:05Z",
@@ -86,16 +75,13 @@ var obj={
     "other_purchases" : {
       "com.goodnotes.gn6_one_time_unlock_3749" : {
         "purchase_date" : "2024-03-03T05:01:34Z"
-      },
-      "com.goodnotes.premium_7dt" : {
-        "purchase_date" : "2024-02-28T02:37:50Z"
       }
     },
     "management_url" : null,
     "subscriptions" : {
       "rc_promo_crossplatform_access_weekly" : {
         "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2024-03-06T02:37:50Z",
+        "expires_date" : "2220-03-06T02:37:50Z",
         "is_sandbox" : false,
         "refunded_at" : null,
         "store_transaction_id" : "90e085f7fef5ffbe7c9656b19b6f0c0a",
@@ -123,7 +109,7 @@ var obj={
       },
       "rc_promo_apple_access_weekly" : {
         "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2024-03-06T02:37:50Z",
+        "expires_date" : "2220-03-06T02:37:50Z",
         "is_sandbox" : false,
         "refunded_at" : null,
         "store_transaction_id" : "9322911433abcf7f43e302d31bd8021e",
@@ -137,7 +123,7 @@ var obj={
       },
       "rc_promo_premium_weekly" : {
         "original_purchase_date" : "2024-02-28T02:37:50Z",
-        "expires_date" : "2024-03-06T02:37:50Z",
+        "expires_date" : "2220-03-06T02:37:50Z",
         "is_sandbox" : false,
         "refunded_at" : null,
         "store_transaction_id" : "f37d45df5f8adbca767f3bad796897cb",
@@ -167,13 +153,13 @@ var obj={
         "grace_period_expires_date" : null,
         "purchase_date" : "2024-02-28T02:37:50Z",
         "product_identifier" : "rc_promo_crossplatform_access_weekly",
-        "expires_date" : "2024-03-06T02:37:50Z"
+        "expires_date" : "2220-03-06T02:37:50Z"
       },
       "premium" : {
         "grace_period_expires_date" : null,
         "purchase_date" : "2024-02-28T02:37:50Z",
         "product_identifier" : "rc_promo_premium_weekly",
-        "expires_date" : "2024-03-06T02:37:50Z"
+        "expires_date" : "2220-03-06T02:37:50Z"
       }
     },
     "original_purchase_date" : "2020-03-08T08:40:37Z",

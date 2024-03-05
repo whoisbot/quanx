@@ -20,7 +20,7 @@
 # ～GoodNotes6☆解锁会员权限（2023-08-11）@ddgksf2013
 ^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/yuanlai.js
 
-^https:\/\/isi\.csan\.goodnotes\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://github.com/ddgksf2013/MoYu/raw/master/GoodNotesProCrack.js
+^https:\/\/isi\.csan\.goodnotes\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/yuanlai.js
 ^https:\/\/isi\.csan\.goodnotes\.com\.cn\/v1\/subscribers\/[^/]+/(offerings|attributes)$ url request-header (\r\n)X-RevenueCat-ETag:.+(\r\n) request-header $1X-RevenueCat-ETag:$2
 [mitm] 
 

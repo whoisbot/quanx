@@ -63,7 +63,7 @@ ibj.subscriber.non_subscriptions={
                 }
             ]
         },
-        obj.subscriber.subscriptions={},
+        obj.subscriber.subscriptions={1},
         obj.subscriber.entitlements={
             "apple_access":{
                 "grace_period_expires_date":null,

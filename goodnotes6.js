@@ -25,7 +25,7 @@
 # ～GoodNotes6☆解锁会员权限（2023-08-11）@ddgksf2013
 
 
-^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/[^/]+$ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 
 

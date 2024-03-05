@@ -53,44 +53,44 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,api.goodnotes.com
 
 
 var obj={
+  "subscriber" : {
+    "last_seen" : "2024-03-03T02:17:52Z",
+    "first_seen" : "2024-02-28T02:37:05Z",
+    "original_application_version" : "469734.405653997",
+    "Warning" : "本脚本仅供学习交流使用，禁止转载售卖",
+    "other_purchases" : {
+      "com.goodnotes.gn6_one_time_unlock_3749" : {
+        "purchase_date" : "2024-03-03T05:01:34Z"
+      }
+    },
+    "management_url" : null,
+    "subscriptions" : {
 
-    "subscriber":{
-        "non_subscriptions":{
-            "com.goodnotes.gn6_one_time_unlock_3749":[
-                {
-                    "is_sandbox":false,
-                    "ownership_type":"PURCHASED",
-                    "id":"06e984c995",
-                    "original_purchase_date":"2024-03-03T05:01:34Z",
-                    "store_transaction_id":"510001502266140",
-                    "purchase_date":"2024-03-03T05:01:34Z",
-                    "store":"app_store"
-                }
-            ]
-        },
-        "first_seen":"2024-02-28T02:37:05Z",
-        "original_application_version":"469734.405653997",
-        "other_purchases":{
-            "com.goodnotes.gn6_one_time_unlock_3749":{
-                "purchase_date":"2024-03-03T05:01:34Z"
-            }
-        },
-        "management_url":null,
-        "subscriptions":{
-
-        },
-        "entitlements":{
-            "apple_access":{
-                "grace_period_expires_date":null,
-                "purchase_date":"2024-03-03T05:01:34Z",
-                "product_identifier":"com.goodnotes.gn6_one_time_unlock_3749",
-                "expires_date":null
-            }
-        },
-        "original_purchase_date":"2020-03-08T08:40:37Z",
-        "original_app_user_id":"a2d62bad-c199-4f1b-8312-c8141b3ce467",
-        "last_seen":"2024-03-03T02:17:52Z",
-		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
+    },
+    "entitlements" : {
+      "apple_access" : {
+        "expires_date" : null,
+        "purchase_date" : "2024-03-03T05:01:34Z",
+        "product_identifier" : "com.goodnotes.gn6_one_time_unlock_3749",
+        "grace_period_expires_date" : null
+      }
+    },
+    "original_purchase_date" : "2020-03-08T08:40:37Z",
+    "original_app_user_id" : "a2d62bad-c199-4f1b-8312-c8141b3ce467",
+    "non_subscriptions" : {
+      "com.goodnotes.gn6_one_time_unlock_3749" : [
+        {
+          "is_sandbox" : false,
+          "ownership_type" : "PURCHASED",
+          "id" : "06e984c995",
+          "original_purchase_date" : "2024-03-03T05:01:34Z",
+          "store_transaction_id" : "510001502266140",
+          "purchase_date" : "2024-03-03T05:01:34Z",
+          "store" : "app_store"
+        }
+      ]
     }
+  }
 }
+
 $done({body:JSON.stringify(obj)});

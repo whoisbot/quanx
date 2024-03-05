@@ -53,6 +53,7 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,api.goodnotes.com
 
 
 var obj={
+"request_date":"2024-03-05T13:09:23Z","request_date_ms":1709644163434,
   "subscriber" : {
     "last_seen" : "2024-03-03T02:17:52Z",
     "first_seen" : "2024-02-28T02:37:05Z",

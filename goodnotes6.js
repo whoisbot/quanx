@@ -27,6 +27,7 @@
 
 
 
+
 [mitm] 
 
 hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,api.goodnotes.com

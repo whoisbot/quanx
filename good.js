@@ -15,19 +15,22 @@
           ⚠️⚠️⚠️
 
 
+
 [rewrite_local]
   
-# ～GoodNotes6☆解锁会员权限（2023-08-11）@ddgksf2013
-^http[s]?:\/\/api\.goodnotes\.com\.cn\/private\/v1\/acceptTcs\/status url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/good.js
+//原来
 
-^http[s]?:\/\/api\.goodnotes\.com\/private\/v1\/acceptTcs\/status url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/good.js
 
-                
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-request-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+
+
+
+
 
 
 [mitm] 
 
-hostname=api.goodnotes.com.cn, api.goodnotes.com
+hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp.com.cn, isi.csan.goodnotesapp.com
 
 ***********************************/
 
@@ -49,16 +52,5 @@ hostname=api.goodnotes.com.cn, api.goodnotes.com
 
 
 
-
-let obj = JSON.parse($response.body);
-
-
-obj={
-  "status" : "TCS_STATUS_NOT_ACCEPTED_REVIEW_REQUIRED",
-  "accepted_tos" : null,
-  "latestTcsUpdateTimestamp" : 1691564400000
-}
-
-
-
-$done({body:JSON.stringify(obj)});
+var $request.headers.X-RevenueCat-ETag='',
+$done({status:"HTTP/1.1 200 OK"});

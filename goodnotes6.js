@@ -65,7 +65,7 @@ var obj={
     "original_application_version" : "469734.405653997",
     "Warning" : "本脚本仅供学习交流使用，禁止转载售卖",
     "other_purchases" : {
-      "com.goodnotes.gn6_one_time_unlock_3999" : {
+      "com.goodnotes.gn6_one_time_unlock" : {
         "purchase_date" : "2024-03-03T05:01:34Z"
       }
     },
@@ -77,12 +77,12 @@ var obj={
       "apple_access" : {
         "expires_date" : null,
         "purchase_date" : "2024-03-03T05:01:34Z",
-        "product_identifier" : "com.goodnotes.gn6_one_time_unlock_3999",
+        "product_identifier" : "com.goodnotes.gn6_one_time_unlock",
         "grace_period_expires_date" : null
       }
     },
     "non_subscriptions" : {
-      "com.goodnotes.gn6_one_time_unlock_3999" : [
+      "com.goodnotes.gn6_one_time_unlock" : [
         {
           "is_sandbox" : false,
           "ownership_type" : "PURCHASED",

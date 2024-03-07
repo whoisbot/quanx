@@ -13,7 +13,11 @@
 > 特别说明：⚠️⚠️⚠️
           本脚本仅供学习交流使用，禁止转载售卖
           ⚠️⚠️⚠️
+//修改
 
+^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+
+^http[s]?:\/\/isi\.csan\.goodnotes\.com\/v1\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 
 [rewrite_local]

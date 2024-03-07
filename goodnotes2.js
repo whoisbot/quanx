@@ -21,16 +21,16 @@
 
 
 
-^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
+^http[s]?:\/\/isi\.csan\.goodnotes(app)?\.com\.cn\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
 ^http[s]?:\/\/isi\.csan\.goodnotes\.com\/v1\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
 
-^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/receipts url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
+^http[s]?:\/\/isi\.csan\.goodnotes(app)?\.com\.cn\/v1\/receipts url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
 
-^http[s]?:\/\/isi\.csan\.goodnotesapp\.com\.cn\/v1\/subscribers\/identify url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
+^http[s]?:\/\/isi\.csan\.goodnotes(app)?\.com\.cn\/v1\/subscribers\/identify url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
 
 [mitm] 
 
-hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,api.goodnotes.com
+hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp.com.cn, isi.csan.goodnotesapp.com
 
 ***********************************/
 

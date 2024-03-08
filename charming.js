@@ -15,7 +15,7 @@ hostname = api.charmingapp.cn
 */
 
 let obj = JSON.parse($response.body);
-obj.current_milli_time=“1709869288000”,
+//obj.current_milli_time=“1709869288000”,
 
 
 $done({body: JSON.stringify(obj)});

@@ -7,7 +7,7 @@ charmjng数藏
 
 
 [rewrite_local]
-^http[s]?:\/\/api\.charmingapp\.cn\/charming\/p\/current\/milli\/time url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/charming.js
+^http[s]?:\/\/api\.charmingapp\.cn\/charming\/p\/nft\/activity\/detail url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/charming.js
 [mitm]
 
 hostname = api.charmingapp.cn
@@ -15,7 +15,7 @@ hostname = api.charmingapp.cn
 */
 
 let obj = JSON.parse($response.body);
-obj.current_milli_time=1709869288000;
+obj.sale_status=1;
 
 
 $done({body: JSON.stringify(obj)});

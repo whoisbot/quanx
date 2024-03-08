@@ -10,7 +10,7 @@ charmjng数藏
 ^http[s]?:\/\/api\.charmingapp\.cn\/charming\/p\/current\/milli\/time url script-response-body charming.js
 [mitm]
 
-hostname = api.revenuecat.com
+hostname = api.charmingapp.cn
 
 */
 

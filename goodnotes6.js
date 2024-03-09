@@ -13,7 +13,7 @@
 
 [rewrite_local]
 ^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
-
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-request-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 [mitm] 
 

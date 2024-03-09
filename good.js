@@ -28,11 +28,14 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 ***********************************/
 
 
+var url = $request.url;
+// 正则表达式匹配任意UUID格式的用户ID
+var newUrl = url.replace(/\/subscribers\/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/, '/subscribers/874cbc43-49b4-4d3c-8b19-a2a63c539cd6');
 
 
 var header = $request.headers;
 header['X-RevenueCat-ETag'] = '1f3f90538579b31a';
-$done({headers : header});
+$done({url: newUrl, headers: header});
 
 
 

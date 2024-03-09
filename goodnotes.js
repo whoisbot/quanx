@@ -24,10 +24,7 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 
 var header = $response.headers;
-header={
-'Content-Encoding':'gzip',
-'Connection':'close'
-};
+header['Connection']='close';
 
 
 var obj={

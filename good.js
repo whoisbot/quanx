@@ -37,6 +37,7 @@ var header = $request.headers;
 header['X-RevenueCat-ETag'] = '';
 header['X-Apple-Device-Identifier']='79E2BF7A-8ADA-4ED8-A74F-31AFD8745A63';
 header['X-Nonce'] = 'wD5dzdJaDVss0evv';
+header['X-Client-Build-Version'] = '2574200.404919701';
 $done({url: newUrl, headers: header});
 
 

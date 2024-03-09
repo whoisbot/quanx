@@ -65,15 +65,21 @@ var body=JSON.stringify({
   }
 });
 
-var response = {
-    body: body
-,
-    headers: {
-'Connection' : `close`,
-'Content-Length' : `557`,
-'Content-Encoding' : `gzip`
-}
+
+
+var headers = {
+    'Connection': 'close',
+    'Content-Encoding': 'gzip'
+    // 'Content-Length'：在这里不设置，让服务器/客户端自动处理
 };
+
+var response = {
+    body: body,
+    headers: headers
+};
+
+
+
 
 
 $done(response);

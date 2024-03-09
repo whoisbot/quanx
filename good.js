@@ -32,5 +32,5 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 var header = $request.headers;
 header['X-RevenueCat-ETag'] = '8f1129098e39f74e';
-$done({ headers: header });
+$done({headers : header});
 

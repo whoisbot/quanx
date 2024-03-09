@@ -2,8 +2,7 @@
 var header = $response.headers;
 header={
 'Content-Encoding':'gzip',
-'Connection':'close',
-'Content-Length':'557' // 假设响应体的长度是557字节
+'Connection':'close'
 };
 
 $done({headers: header});

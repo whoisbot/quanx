@@ -20,7 +20,8 @@
 hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp.com.cn, isi.csan.goodnotesapp.com
 
 ***********************************/
-
+var header = $response.headers;
+header['X-RevenueCat-ETag'] = '18fab884de1faeb7';
 var obj={
     "request_date_ms":1691760087616,
     "request_date":"2023-08-11T13:21:27Z",
@@ -63,4 +64,4 @@ var obj={
 		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
     }
 };
-$done({body:JSON.stringify(obj)});
+$done({headers: header, body: JSON.stringify(obj)});

@@ -16,7 +16,7 @@ unlock python3ide
 [rewrite_local]
 
 
-^http[s]?:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body python3ide.js
+^http[s]?:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/python3ide.js
 [mitm]
 
 hostname = api.revenuecat.com

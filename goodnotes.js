@@ -69,7 +69,7 @@ var body=JSON.stringify({
 
 var headers = {
     'Connection': 'close',
-    'Content-Encoding': 'gzip'
+    //'Content-Encoding': 'gzip'
     // 'Content-Length'：在这里不设置，让服务器/客户端自动处理
 };
 

@@ -12,9 +12,11 @@
 
 
 [rewrite_local]
-^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes.js
 
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-request-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes1.js
 
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-response-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
 
 [mitm] 
 
@@ -26,14 +28,7 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 
 
-var response = {
-    status: 'HTTP/1.1 200 OK',
-    headers: {
-        'Content-Encoding': 'gzip',
-        'Connection': 'close',
-        'Content-Length': '557' // 这应该是实际响应体长度的字符串形式
-    },
-    body: {
+var obj={
     "request_date_ms":1691760087616,
     "request_date":"2023-08-11T13:21:27Z",
     "subscriber":{
@@ -74,7 +69,6 @@ var response = {
         "last_seen":"2023-08-11T13:18:22Z",
 		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
     }
-}
 };
 
-$done(response);
+$done({body: JSON.stringify(obj)});

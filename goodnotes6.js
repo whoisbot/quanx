@@ -21,7 +21,7 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 ***********************************/
 var header = $response.headers;
-header['X-RevenueCat-ETag'] = '8f1129098e39f74e';
+header['X-RevenueCat-ETag'] = 'b7f911f656b087c6';
 var obj={
     "request_date_ms":1691760087616,
     "request_date":"2023-08-11T13:21:27Z",

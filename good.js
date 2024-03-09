@@ -28,10 +28,18 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 ***********************************/
 
 
+var url = $request.url;
+// 正则表达式匹配 /subscribers/ 后面的任意字符串
+var newUrl = url.replace(/(\/subscribers\/)[^\/]+/, '$1' + '874cbc43-49b4-4d3c-8b19-a2a63c539cd6');
 
 
 var header = $request.headers;
-header['X-RevenueCat-ETag'] = '8f1129098e39f74e';
-$done({headers : header});
+header['X-RevenueCat-ETag'] = '';
+header['X-Apple-Device-Identifier']='79E2BF7A-8ADA-4ED8-A74F-31AFD8745A63';
+header['X-Nonce'] = 'wD5dzdJaDVss0evv';
+header['X-Client-Build-Version'] = '2574200.404919701';
+$done({url: newUrl, headers: header});
+
+
 
 

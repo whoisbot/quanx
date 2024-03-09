@@ -25,10 +25,15 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 
 
-var header=$response.headers;
-header['X-RevenueCat-ETag'] = '8f1129098e39f74e';
 
-var obj={
+var response = {
+    status: 'HTTP/1.1 200 OK',
+    headers: {
+        'Content-Encoding': 'gzip',
+        'Connection': 'close',
+        'Content-Length': '557' // 这应该是实际响应体长度的字符串形式
+    },
+    body: {
     "request_date_ms":1691760087616,
     "request_date":"2023-08-11T13:21:27Z",
     "subscriber":{
@@ -69,5 +74,7 @@ var obj={
         "last_seen":"2023-08-11T13:18:22Z",
 		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
     }
+}
 };
-$done({headers: header, body: JSON.stringify(obj)});
+
+$done(response);

@@ -75,8 +75,11 @@ var headers = {
 };
     
 var response = {
+
+    status: 'HTTP/1.1 200 OK',
+    headers: headers,
+    
     body: body,
-    headers: headers
 };
 
 

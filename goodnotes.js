@@ -12,11 +12,9 @@
 
 
 [rewrite_local]
-^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes.js
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes.js
 
-^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-request-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes1.js
-
-^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-response-header https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes2.js
+^https:\/\/isi\.csan\.goodnotes\.com\/.+\/subscribers\/[^/]+/(offerings|attributes)$ url request-header (\r\n)X-RevenueCat-ETag:.+(\r\n) request-header $1X-RevenueCat-ETag:$2
 
 [mitm] 
 
@@ -25,7 +23,11 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 ***********************************/
 
 
-
+var header = $response.headers;
+header={
+'Content-Encoding':'gzip',
+'Connection':'close'
+};
 
 
 var obj={
@@ -71,4 +73,4 @@ var obj={
     }
 };
 
-$done({body: JSON.stringify(obj)});
+$done({headers: header, body: JSON.stringify(obj)});

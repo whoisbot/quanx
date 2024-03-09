@@ -69,11 +69,11 @@ var body=JSON.stringify({
 
 var headers = {
     'Connection': 'close',
-   // 'Content-Encoding': 'gzip'
-    // 'Content-Length'：在这里不设置，让服务器/客户端自动处理
+   'Content-Encoding': 'gzip'
+     'Content-Length'：'557'
 
 };
-    headers['Content-Length'] = Buffer.byteLength(body, 'utf8').toString();
+    
 var response = {
     body: body,
     headers: headers

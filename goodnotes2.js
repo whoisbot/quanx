@@ -22,9 +22,9 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 ***********************************/
 
 
+let obj = JSON.parse($response.body);
 
-
-var obj={
+obj={
     "request_date_ms":1691760087616,
     "request_date":"2023-08-11T13:21:27Z",
     "subscriber":{

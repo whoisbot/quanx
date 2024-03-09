@@ -71,9 +71,9 @@ var headers = {
     'Connection': 'close',
     'Content-Encoding': 'gzip'
     // 'Content-Length'：在这里不设置，让服务器/客户端自动处理
-    headers['Content-Length'] =Buffer.byteLength(body, 'utf8'); // 设置正确的长度
-};
 
+};
+    headers['Content-Length'] =Buffer.byteLength(body, 'utf8'); // 设置正确的长度
 var response = {
     body: body,
     headers: headers

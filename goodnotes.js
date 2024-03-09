@@ -28,5 +28,34 @@ header={
 'Content-Length' : `557`,
 'Content-Encoding' : `gzip`
 };
+let obj = JSON.parse($response.body);
+obj.subscriber.non_subscriptions={
+            "com.goodnotes6.one_time_unlock":[
+                {
+                    "is_sandbox":false,
+                    "ownership_type":"PURCHASED",
+                    "id":"46ab585dbc",
+                    "original_purchase_date":"2022-11-10T23:58:09Z",
+                    "store_transaction_id":"300001271068792",
+                    "purchase_date":"2023-08-10T23:58:09Z",
+                    "store":"app_store"
+                }
+            ]
+        };
+obj.subscriber.subscriptions={};
 
-$done({headers: header});
+obj.subscriber.other_purchases={
+            "com.goodnotes6.one_time_unlock":{
+                "purchase_date":"2023-08-10T23:58:09Z"
+            };
+            
+obj.subscriber.entitlements={
+            "apple_access":{
+                "grace_period_expires_date":null,
+                "purchase_date":"2023-08-10T14:16:41Z",
+                "product_identifier":"com.goodnotes6.one_time_unlock",
+                "expires_date":null
+            }
+        };
+
+$done({headers: header,body: JSON.stringify(obj)});

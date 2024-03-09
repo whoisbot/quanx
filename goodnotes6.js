@@ -12,7 +12,7 @@
 
 
 [rewrite_local]
-^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
+^https:\/\/isi\.csan\.goodnotes(app)?\.com(\.cn)?(\/v1)?\/(receipts$|subscribers\/[^/]+$) url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/goodnotes6.js
 
 
 [mitm] 
@@ -24,7 +24,8 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 
 
 
-
+var header=$response.headers;
+header['X-RevenueCat-ETag'] = '8f1129098e39f74e';
 
 var obj={
     "request_date_ms":1691760087616,
@@ -68,4 +69,4 @@ var obj={
 		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
     }
 };
-$done({body: JSON.stringify(obj)});
+$done({headers: header, body: JSON.stringify(obj)});

@@ -29,5 +29,5 @@ obj.subscriber.subscriptions.python3ide_six_month.period_type="pro";
 obj.subscriber.entitlements.pro.expires_date="2099-06-17T07:40:40Z";
 
 
-$done({body: JSON.stringify(obj)});
+$done({body : JSON.stringify(obj)});
 

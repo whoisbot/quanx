@@ -8,7 +8,6 @@ newHeader['Content-Length'] = '557'; // 假设响应体的长度是557字节
 var newResponse = {
     status: $response.status, // 保留原始状态码和状态信息
     headers: newHeader, // 使用新的头部
-    body: $response.body // 响应体保持不变
 };
 
 $done(newResponse);

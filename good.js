@@ -34,7 +34,7 @@ var newUrl = url.replace(/(\/subscribers\/)[^\/]+/, '$1' + '874cbc43-49b4-4d3c-8
 
 
 var header = $request.headers;
-header['X-RevenueCat-ETag'] = '1f3f90538579b31a';
+header['X-RevenueCat-ETag'] = '';
 header['X-Apple-Device-Identifier']='79E2BF7A-8ADA-4ED8-A74F-31AFD8745A63';
 header['X-Nonce'] = 'wD5dzdJaDVss0evv';
 $done({url: newUrl, headers: header});

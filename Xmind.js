@@ -36,9 +36,9 @@ let body = JSON.parse($response.body);
     body.expireTime = '3990928235000';
   }
   
-    if (body.sub) {
+    if (body.sub && typeof body.sub==='object') {
     body.sub.bundle.status = 'sub'; // 将状态修改为你想要的新值
-    body.sub.bundle.status.expireTime = '3990928235000';
+    body.sub.bundle.expireTime = '3990928235000';
   }
   
 

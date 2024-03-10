@@ -24,7 +24,6 @@ hostname = www.xmind.cn
 
 let body = JSON.parse($response.body);
 
-if (body && typeof body.license === 'object') {
   if (body.license && 'status' in body.license) {
     body.license.status = 'sub'; // 将license状态修改为你想要的新值
     body.license.expireTime = '3990928235000';
@@ -34,6 +33,5 @@ if (body && typeof body.license === 'object') {
     body.status = 'sub'; // 将状态修改为你想要的新值
     body.expireTime = '3990928235000';
   }
-}
 
 $done({ body: JSON.stringify(body) });

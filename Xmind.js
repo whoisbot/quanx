@@ -28,6 +28,6 @@ obj = {
      "expireTime": 3990928235000
    },
    "_code": 200
- }
+ };
 
 $done({body: JSON.stringify(obj)});

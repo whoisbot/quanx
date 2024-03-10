@@ -4,7 +4,7 @@ Quantumult X 脚本
 unlock Xmind
 > 应用名称：Xmind
 > 脚本作者：whoisbot
-> 解锁说明：解锁高级会员权限
+> 解锁说明：未解锁，还在研究
 > 更新时间：2024-03-10
 > 特别提醒：如需转载请注明出处，谢谢合作！
 > 特别说明：⚠️⚠️⚠️
@@ -44,11 +44,11 @@ let body = JSON.parse($response.body);
       "appstore" : 1,
       "bind_version" : "bundle",
       "expireTime" : "3990928235000",
-      "edu" : 0,
+      "edu" : 1,
       "autorenew_month" : 12
     }
   }
-  body.maillist_name='1-year-cn@maillist.sendcloud.org'
+  body.maillist_name='2-year-cn@maillist.sendcloud.org'
   }
   
 

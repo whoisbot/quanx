@@ -36,9 +36,18 @@ let body = JSON.parse($response.body);
     body.expireTime = '3990928235000';
   }
   
-    if (body.sub && typeof body.sub==='object') {
-    body.sub.bundle.status = 'sub'; // 将状态修改为你想要的新值
-    body.sub.bundle.expireTime = '3990928235000';
+    if (body.sub && typeof body.sub==='object') { 
+    body.sub={
+    "bundle" : {
+      "status" : "sub",
+      "autorenewable" : 1,
+      "appstore" : 1,
+      "bind_version" : "bundle",
+      "expireTime" : "3990928235000",
+      "edu" : 0,
+      "autorenew_month" : 12
+    }
+  }
   }
   
 

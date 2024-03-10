@@ -16,6 +16,8 @@ unlock Xmind
 ^http[s]?:\/\/www\.xmind\.cn\/\_res\/devices url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
 ^http[s]?:\/\/www\.xmind\.cn\/_api\/appstore\/active url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
 
+^http[s]?:\/\/www\.xmind\.cn\/_res\/profile\/.*\/ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
+
 [mitm]
 hostname = www.xmind.cn
 */
@@ -33,5 +35,11 @@ let body = JSON.parse($response.body);
     body.status = 'sub'; // 将状态修改为你想要的新值
     body.expireTime = '3990928235000';
   }
+  
+    if (body.sub) {
+    body.sub.bundle.status = 'sub'; // 将状态修改为你想要的新值
+    body.sub.bundle.status.expireTime = '3990928235000';
+  }
+  
 
 $done({ body: JSON.stringify(body) });

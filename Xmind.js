@@ -48,6 +48,7 @@ let body = JSON.parse($response.body);
       "autorenew_month" : 12
     }
   }
+  body.maillist_name='1-year-cn@maillist.sendcloud.org'
   }
   
 

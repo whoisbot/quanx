@@ -13,7 +13,7 @@ unlock Xmind
 
 
 [rewrite_local]
-^http[s]?:\/\/www\.xmind\.cn\/\_res\/devices url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/XMind.js
+^http[s]?:\/\/www\.xmind\.cn\/\_res\/devices url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
 
 [mitm]
 hostname = www.xmind.cn

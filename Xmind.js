@@ -52,6 +52,5 @@ let body = JSON.parse($response.body);
   body.email_status=1,
   body.maillist_name='yearly-cn@maillist.sendcloud.org'
   }
-  
 
 $done({ body: JSON.stringify(body) });

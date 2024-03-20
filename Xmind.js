@@ -30,7 +30,7 @@ hostname = www.xmind.cn,www.xmind.app,www.xmind.net
 
 let body = JSON.parse($response.body);
 
-  if (body.license && 'status' in body.license) {
+  if (body.license) {
     body.license.status = 'sub'; // 将license状态修改为你想要的新值
     body.license.expireTime = '3990928235000';
   }
@@ -40,7 +40,7 @@ let body = JSON.parse($response.body);
     body.expireTime = '3990928235000';
   }
   
-    if (body.sub && typeof body.sub==='object') { 
+    if (body.sub) { 
     body.sub={
     "bundle" : {
       "status" : "sub",

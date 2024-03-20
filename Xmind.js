@@ -18,8 +18,12 @@ unlock Xmind
 
 ^http[s]?:\/\/www\.xmind\.cn\/_res\/profile\/.*\/ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
 
+^http[s]?:\/\/www\.xmind\.cn\/_res\/appstore\/sub url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Xmind.js
+
+
+
 [mitm]
-hostname = www.xmind.cn
+hostname = www.xmind.cn,www.xmind.app
 */
 
 
@@ -50,7 +54,9 @@ let body = JSON.parse($response.body);
     
   }
   body.email_status=1,
-  body.maillist_name='yearly-cn@maillist.sendcloud.org'
+  //body.maillist_name='yearly-cn@maillist.sendcloud.org'
   }
+  
+  
 
 $done({ body: JSON.stringify(body) });

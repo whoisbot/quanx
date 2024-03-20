@@ -23,7 +23,7 @@ unlock Xmind
 
 
 [mitm]
-hostname = www.xmind.cn,www.xmind.app
+hostname = www.xmind.cn,www.xmind.app,www.xmind.net
 */
 
 

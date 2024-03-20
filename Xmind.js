@@ -49,7 +49,7 @@ let body = JSON.parse($response.body);
     }
   }
   body.email_status=1,
-  body.maillist_name='2-free-cn@maillist.sendcloud.org'
+  body.maillist_name='yearly-cn@maillist.sendcloud.org'
   }
   
 

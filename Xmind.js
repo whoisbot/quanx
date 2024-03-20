@@ -40,7 +40,7 @@ let body = JSON.parse($response.body);
     body.expireTime = '3990928235000';
   }
   
-    if (body.sub) { 
+    if (typeof body.sub==='object') { 
     body.sub={
     "bundle" : {
       "status" : "sub",
@@ -50,7 +50,7 @@ let body = JSON.parse($response.body);
       "expireTime" : "3990928235000",
       "edu" : 1,
       "autorenew_month" : 12
-    }
+    };
     
   }
   body.email_status=1,

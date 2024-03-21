@@ -22,53 +22,45 @@ hostname=isi.csan.goodnotes.com.cn, isi.csan.goodnotes.com,isi.csan.goodnotesapp
 ***********************************/
 
 var obj={
-  "request_date_ms" : 1711009897801,
-  "request_date" : "2024-03-21T08:31:37Z",
-  "subscriber" : {
-    "non_subscriptions" : {
-      "com.goodnotes6.one_time_unlock" : [
-        {
-          "is_sandbox" : false,
-          "ownership_type" : "PURCHASED",
-          "id" : "0ba9419f06",
-          "original_purchase_date" : "2024-02-28T02:37:50Z",
-          "store_transaction_id" : "510001497588768",
-          "purchase_date" : "2024-02-28T02:37:50Z",
-          "store" : "app_store"
-        }
-      ]
-    },
-    "first_seen" : "2024-03-09T15:37:07Z",
-    "original_application_version" : "2574200.404919701",
-    "other_purchases" : {
-      "com.goodnotes6.one_time_unlock" : {
-        "purchase_date" : "2024-02-28T02:37:50Z"
-      }
-    },
-    "management_url" : null,
-    "entitlements" : {
-      "apple_access" : {
-        "grace_period_expires_date" : null,
-        "purchase_date" : "2024-03-04T06:20:53Z",
-        "product_identifier" : "com.goodnotes6.one_time_unlock",
-        "expires_date" : null
-      },
-      "premium" : {
-        "grace_period_expires_date" : null,
-        "purchase_date" : "2024-02-28T02:37:50Z",
-        "product_identifier" : "com.goodnotes6.one_time_unlock",
-        "expires_date" : null
-      },
-      "crossplatform_access" : {
-        "grace_period_expires_date" : null,
-        "purchase_date" : "2024-03-04T06:20:53Z",
-        "product_identifier" : "com.goodnotes6.one_time_unlock",
-        "expires_date" : null
-      }
-    },
-    "original_purchase_date" : "2024-03-04T08:25:14Z",
-    "original_app_user_id" : "a1f942e8-2981-4af8-ad63-ec1ffd955bc2",
-    "last_seen" : "2024-03-21T07:58:14Z"
-  }
+    "request_date_ms":1691760087616,
+    "request_date":"2023-08-11T13:21:27Z",
+    "subscriber":{
+        "non_subscriptions":{
+            "com.goodnotes6.one_time_unlock":[
+                {
+                    "is_sandbox":false,
+                    "ownership_type":"PURCHASED",
+                    "id":"46ab585dbc",
+                    "original_purchase_date":"2022-11-10T23:58:09Z",
+                    "store_transaction_id":"300001271068792",
+                    "purchase_date":"2023-08-10T23:58:09Z",
+                    "store":"app_store"
+                }
+            ]
+        },
+        "first_seen":"2023-08-09T13:55:38Z",
+        "original_application_version":"1578030.383984727",
+        "other_purchases":{
+            "com.goodnotes6.one_time_unlock":{
+                "purchase_date":"2023-08-10T23:58:09Z"
+            }
+        },
+        "management_url":null,
+        "subscriptions":{
+        },
+        "entitlements":{
+            "apple_access":{
+                "grace_period_expires_date":null,
+                "purchase_date":"2023-08-10T14:16:41Z",
+                "product_identifier":"com.goodnotes6.one_time_unlock",
+                "expires_date":null
+            }
+        },
+        "original_purchase_date":"2022-04-05T10:43:53Z",
+        "original_app_user_id":"1d6316b8-aab7-4c1f-9dee-df471814b03e",
+        "original_app_user_id":"$RCAnonymousID:06923c3f1dfc4f23b1b56c9e24dbdffc",
+        "last_seen":"2023-08-11T13:18:22Z",
+		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
+    }
 };
 $done({body: JSON.stringify(obj)});

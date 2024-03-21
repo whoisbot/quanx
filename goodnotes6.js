@@ -46,23 +46,6 @@ var obj={
       }
     },
     "management_url" : null,
-    "subscriptions" : {
-      "rc_promo_crossplatform_access_weekly" : {
-                "original_purchase_date" : "2024-03-04T06:20:53Z",
-                "expires_date" : null,
-                "is_sandbox" : false,
-                "refunded_at" : null,
-                "store_transaction_id" : "510001503320168",
-                "unsubscribe_detected_at" : null,
-                "grace_period_expires_date" : null,
-                "period_type" : "normal",
-                "purchase_date" : "2024-03-04T06:20:53Z",
-                "billing_issues_detected_at" : null,
-                "ownership_type" : "PURCHASED",
-                "store" : "app_store",
-                "auto_resume_date" : null
-      }
-    },
     "entitlements" : {
       "apple_access" : {
         "grace_period_expires_date" : null,

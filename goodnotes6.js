@@ -58,7 +58,7 @@ var obj={
             }
         },
         "original_purchase_date":"2022-04-05T10:43:53Z",
-        "original_app_user_id":"1d6316b8-aab7-4c1f-9dee-df471814b03e",
+        "original_app_user_id":"$RCAnonymousID:06923c3f1dfc4f23b1b56c9e24dbdffc",
         "last_seen":"2023-08-11T13:18:22Z",
 		"Warning":"本脚本仅供学习交流使用，禁止转载售卖"
     }

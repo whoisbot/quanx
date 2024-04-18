@@ -3,7 +3,7 @@
 
 
 [rewrite_local]
-^https?:\/\/buy\.vmall\.com\/queryRushbuyInfo\.json\?sbomCodes=.*?&portal=4&lang=zh-CN&country=CN$ url script-echo-response https://raw.githubusercontent.com/whoisbot/quanx/main/xiugai.js
+^https?:\/\/buy\.vmall\.com\/queryRushbuyInfo\.json\?sbomCodes=.*?&portal=4&lang=zh-CN&country=CN$ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/xiugai.js
 
 
 

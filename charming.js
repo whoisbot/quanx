@@ -10,6 +10,9 @@ charmjng数藏
 ^http[s]?:\/\/api\.charmingapp\.cn\/charming\/p\/nft\/activity\/detail url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/charming.js
 [mitm]
 
+
+
+
 hostname = api.charmingapp.cn
 
 */
@@ -19,4 +22,7 @@ obj.sale_status=1;
 
 
 $done({body: JSON.stringify(obj)});
+
+
+
 

@@ -28,7 +28,7 @@ let obj = JSON.parse(body);
 if (obj.skuRushBuyInfoList && Array.isArray(obj.skuRushBuyInfoList)) {
     // 遍历数组，修改每个对象中的 startTime 属性
     obj.skuRushBuyInfoList.forEach(function(item, index) {
-        item.startTime = 1713420366571; // 替换为您想要的时间戳
+        item.startTime = 1714706220000; // 替换为您想要的时间戳
     });
 }
 

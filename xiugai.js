@@ -24,15 +24,21 @@ let body = $response.body;
 // 将 string 类型的响应体转换为 JSON 对象
 let obj = JSON.parse(body);
 
-// 检查 obj 是否有 skuRushBuyInfoList 属性且它是一个数组
-if (obj.skuRushBuyInfoList && Array.isArray(obj.skuRushBuyInfoList)) {
-    // 遍历数组，修改每个对象中的 startTime 属性
-    obj.skuRushBuyInfoList.forEach(function(item, index) {
-        item.startTime = 1714647061000; // 替换为您想要的时间戳
-    });
+// 递归函数，用于深度搜索所有的 startTime 并修改其值
+function updateStartTime(o) {
+    for (var key in o) {
+        if (typeof o[key] == 'object' && o[key] !== null) {
+            updateStartTime(o[key]);
+        } else if (key == 'startTime') {
+            o[key] = '2024-05-02T00:00:00Z'; // 您想要的新 startTime 值
+        }
+    }
 }
 
-// 将修改后的 JSON 对象转换回 string 类型的响应体
+// 调用函数并传入 JSON 对象
+updateStartTime(obj);
+
+
 body = JSON.stringify(obj);
 
 // 设置修改后的响应体

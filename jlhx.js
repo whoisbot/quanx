@@ -12,7 +12,7 @@ Quantumult X 脚本
 
 ^http[s]?:\/\/jlclient\.uqbike\.cn\/machineStatus\/getDiscountByMachineNO\.do url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/jlhx.js
 
-^http[s]?:\/\/jlclient\.uqbike\.cn\/user\/getByUserId\.do url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/jlhx.js
+^http[s]?:\/\/jlclient\.uqbike\.cn\/user\/getByUserId\.do\?token=[^&]+&adAccountId=\d+$ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/jlhx.js
 
 
 [mitm]

@@ -40,7 +40,7 @@ function modifyResponse(url, body) {
   }else if (url.indexOf('getByUserId.do') > -1) {
    
     body.data.ridingScore=99999;
-    body.data.rideCardDate=2025-05-30;
+    body.data.rideCardDate="2025-05-30";
  
   }
   

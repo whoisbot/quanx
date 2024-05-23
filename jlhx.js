@@ -41,6 +41,7 @@ function modifyResponse(url, body) {
    
     body={"ret":1,"data":{"accountId":40179,"birthDay":"**********","depositMoney":0.0,"depositState":0,"email":"","idNO":"","joinTime":"2024-05-06 07:00:26","money":0.0,"name":"","nameAuth":false,"openId":"1","phone":"133****4620","remark":"","rideCardDate":"2025-05-30","rideMoney":0.0,"ridingScore":99999,"sex":"","studentAuth":false,"updateTime":"2025-05-23 08:05:12","userId":9136658}
   }
+} 
   
   return body;
 }

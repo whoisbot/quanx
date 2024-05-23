@@ -42,7 +42,7 @@ function modifyResponse(url, body) {
 
 body = modifyResponse(url, body);
 
-$done({body: JSON.stringify(obj)});
+$done({body: JSON.stringify(body)});
 
 
 

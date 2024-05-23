@@ -30,7 +30,7 @@ function modifyResponse(url, body) {
   } else if (url.indexOf('getByMachineNO.do') > -1) {
  
     body.batteryEI=+1;
-    body.times=0;
+    body.times=3;
   }else if (url.indexOf('getByAccountId.do') > -1) {
    
         body={"ret":1,"data":{"accountId":700137,"accountName":"哈尔滨华德学院","areaMoney":2000,"baseMile":0,"baseMileFee":0,"baseTime":12,"baseTimeFee":170,"capMile":0,"capMileFee":0,"capTime":0,"capTimeFee":0,"dispatchSwitch":1,"freeRideTime":2,"freeTime":1,"helmetMoney":0,"helmetSwitch":0,"newUserFreeTime":0,"newUserFreeTimes":0,"newUserRechcrge":0,"overMile":0,"overMileFee":0,"overTime":10,"overTimeFee":170,"parkPointMoney":300,"rechargeBase":0}}

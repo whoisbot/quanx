@@ -26,7 +26,7 @@ var url = $request.url;
 function modifyResponse(url, body) {
   if (url.indexOf('queryPage.do') > -1) {
   
-    body = {"ret":1,"total":1,"data":[{"buyTime":"2024-05-23","currentNum":0,"endDate":"2025-05-30","feeName":"全车型","isValid":true,"maxRide":999,"name":"9.9元9次卡","rideCardId":100847,"ridecardType":0,"startDate":"2024-05-23","timeCount":12,"updateTime":3155871162400,"useCount":0,"userId":9136658,"userType":0}]}
+    body = {"ret":1,"total":1,"data":[{"buyTime":"2024-05-23","currentNum":0,"endDate":"2025-05-30","feeName":"全车型","isValid":true,"maxRide":999,"name":"9.9元999次卡","rideCardId":100847,"ridecardType":0,"startDate":"2024-05-23","timeCount":12,"updateTime":3155871162400,"useCount":0,"userId":9136658,"userType":0}]}
   } else if (url.indexOf('getByMachineNO.do') > -1) {
  
     body.batteryEI=+1;
@@ -39,7 +39,7 @@ function modifyResponse(url, body) {
     body={"rideCard":{"accountId":700137,"buyTime":"2024-05-23","currentNum":0,"endDate":"2025-05-30","feeId":0,"feeName":"全车型","isValid":true,"maxRide":999,"name":"9.9元999次卡","rideCardId":100847,"ridecardType":0,"startDate":"2024-05-23","timeCount":12,"updateTime":3155871162400,"useCount":0,"userId":9136658,"userType":0},"ret":1}
   }else if (url.indexOf('getByUserId.do') > -1) {
    
-    body={"ret":1,"data":{"accountId":40179,"birthDay":"**********","depositMoney":0.0,"depositState":0,"email":"","idNO":"","joinTime":"2024-05-06 07:00:26","money":0.0,"name":"","nameAuth":false,"openId":"1","phone":"133****4620","remark":"","rideCardDate":"2025-05-30","rideMoney":0.0,"ridingScore":999999,"sex":"","studentAuth":false,"updateTime":"2024-05-23 08:05:12","userId":9136658}}
+    body={"ret":1,"data":{"accountId":40179,"birthDay":"**********","depositMoney":0.0,"depositState":0,"email":"","idNO":"","joinTime":"2024-05-06 07:00:26","money":0.0,"name":"","nameAuth":false,"openId":"1","phone":"133****4620","remark":"","rideCardDate":"2025-05-30","rideMoney":0.0,"ridingScore":999999,"sex":"","studentAuth":false,"updateTime":"2025-05-23 08:05:12","userId":9136658}}
   }
   
   return body;

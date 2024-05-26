@@ -63,6 +63,7 @@ function modifyResponse(url, body) {
   }else if (url.indexOf('getByUserCode.do') > -1) {
    
     body.data.batteryEI=+1;
+    body.data.inside=1;
 
  
   }

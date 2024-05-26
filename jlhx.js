@@ -28,8 +28,8 @@ var url = $request.url;
 function modifyResponse(url, body) {
   if (url.indexOf('queryPage.do') > -1) {
   body.data[0].endDate="2025-05-30";
-  body.data[0].currentNum=1;
-  body.data[0].useCount=1;
+  body.data[0].currentNum=3;
+  body.data[0].useCount=5;
   body.data[0].isValid=true;
   body.data[0].maxRide=999;
   body.data[0].name="9.9元999次卡";

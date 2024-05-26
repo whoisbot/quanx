@@ -14,6 +14,7 @@ Quantumult X 脚本
 
 ^http[s]?:\/\/jlclient\.uqbike\.cn\/user\/getByUserId\.do\?token=[^&]+&adAccountId=\d+$ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/jlhx.js
 
+^http[s]?:\/\/jlclient\.uqbike\.cn\/machineStatus\/getByUserCode\.do url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/jlhx.js
 
 [mitm]
 hostname = jlclient.uqbike.cn,
@@ -58,6 +59,11 @@ function modifyResponse(url, body) {
    
     body.data.ridingScore=99999;
     body.data.rideCardDate="2025-05-30";
+ 
+  }else if (url.indexOf('getByUserCode.do') > -1) {
+   
+    body.data.batteryEI=+1;
+
  
   }
   

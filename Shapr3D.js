@@ -10,10 +10,10 @@ unlock Shapr:3D PRO
 > 特别说明：⚠️⚠️⚠️
           本脚本仅供学习交流使用，禁止转载售卖
           ⚠️⚠️⚠️
-
+^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/profile-with-device url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Shapr3D.js
 [rewrite_local]
 # unlock Shapr3D
-^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/profile-with-device url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Shapr3D.js
+
 ^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/account url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Shapr3D.js
 [mitm]
 hostname = prod.api.shapr3d.com,

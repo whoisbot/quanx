@@ -20,21 +20,28 @@ hostname = buy.itunes.apple.com,
 
 */
 
-let obj = JSON.parse($response.body);
-obj.status = "1";
 
-obj.pending_renewal_info[0].expiration_intent=0;
-obj.pending_renewal_info[0].auto_renew_status=1;
 
-obj.receipt.in_app[0].expires_date="2099-03-29 13:45:16 Etc/GMT";
-obj.receipt.in_app[0].expires_date_ms="4077265517000";
-obj.receipt.in_app[0].expires_date_pst="2099-03-29 06:45:16 America/Los_Angeles";
-obj.receipt.in_app[0].is_trial_period="false";
-obj.receipt.in_app[0].is_in_intro_offer_period="true";
-obj.latest_receipt_info[0].expires_date="2099-03-29 13:45:16 Etc/GMT";
-obj.latest_receipt_info[0].expires_date_ms="4077265517000";
-obj.latest_receipt_info[0].expires_date_pst="2099-03-29 06:45:16 America/Los_Angeles";
-obj.latest_receipt_info[0].is_trial_period="false";
-obj.latest_receipt_info[0].is_in_intro_offer_period="true";
+function deepReplace(obj, keyToFind, valueToSet) {
+    Object.keys(obj).forEach(function (key) {
+        if (key === keyToFind) {
+            obj[key] = valueToSet;
+        } else if (obj[key] && typeof obj[key] === 'object') {
+            deepReplace(obj[key], keyToFind, valueToSet);
+        }
+    });
+}
+
+var body = $response.body; // 获取响应体
+var obj = JSON.parse(body); // 将响应体字符串转为JSON对象
+
+deepReplace(obj, 'auto_renew_status', 1); 
+deepReplace(obj, 'expiration_intent', 0); 
+deepReplace(obj, 'status', 1); 
+deepReplace(obj, 'expires_date',"2099-03-29 13:45:16 Etc/GMT"); 
+deepReplace(obj, 'expires_date_ms', 4077265517000); 
+deepReplace(obj, 'expires_date_pst', "2099-03-29 06:45:16 America/Los_Angeles"); 
+deepReplace(obj, 'is_trial_period', "false"); 
+deepReplace(obj, 'is_in_intro_offer_period', "true"); 
 
 $done({body: JSON.stringify(obj)});

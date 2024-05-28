@@ -22,24 +22,14 @@ hostname = buy.itunes.apple.com,
 
 
 
-function deepReplace(container, valueToFind, valueToSet) {
-    if (Array.isArray(container)) {
-        for (let i = 0; i < container.length; i++) {
-            if (container[i] === valueToFind) {
-                container[i] = valueToSet;
-            } else if (container[i] && typeof container[i] === 'object') {
-                deepReplaceValue(container[i], valueToFind, valueToSet);
-            }
+function deepReplace(obj, keyToFind, valueToSet) {
+    Object.keys(obj).forEach(function (key) {
+        if (key === keyToFind) {
+            obj[key] = valueToSet;
+        } else if (obj[key] && typeof obj[key] === 'object') {
+            deepReplace(obj[key], keyToFind, valueToSet);
         }
-    } else if (typeof container === 'object' && container !== null) {
-        Object.keys(container).forEach(function (key) {
-            if (container[key] === valueToFind) {
-                container[key] = valueToSet;
-            } else if (container[key] && typeof container[key] === 'object') {
-                deepReplaceValue(container[key], valueToFind, valueToSet);
-            }
-        });
-    }
+    });
 }
 
 

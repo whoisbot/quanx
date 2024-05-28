@@ -23,14 +23,8 @@ hostname = buy.itunes.apple.com,
 let obj = JSON.parse($response.body);
 obj.status = "1";
 
-obj.pending_renewal_info=[{
-    "expiration_intent": "0",
-    "auto_renew_product_id": "com.shapr3d.shapr.iap.lite2.renewing.yearly",
-    "is_in_billing_retry_period": "0",
-    "product_id": "com.shapr3d.shapr.iap.lite2.renewing.yearly",
-    "original_transaction_id": "510000657302855",
-    "auto_renew_status": "1"
-  }];
+obj.pending_renewal_info[0].expiration_intent=0;
+obj.pending_renewal_info[0].auto_renew_status=1;
 
 obj.receipt.in_app[0].expires_date="2099-03-29 13:45:16 Etc/GMT";
 obj.receipt.in_app[0].expires_date_ms="4077265517000";

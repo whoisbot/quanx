@@ -35,11 +35,11 @@ function deepReplace(obj, keyToFind, valueToSet) {
 var body = $response.body; // 获取响应体
 var obj = JSON.parse(body); // 将响应体字符串转为JSON对象
 
-deepReplace(obj, 'auto_renew_status', 1); 
-deepReplace(obj, 'expiration_intent', 0); 
-deepReplace(obj, 'status', 1); 
+deepReplace(obj, 'auto_renew_status', "1"); 
+deepReplace(obj, 'expiration_intent', "0"); 
+deepReplace(obj, 'status', "1"); 
 deepReplace(obj, 'expires_date',"2099-03-29 13:45:16 Etc/GMT"); 
-deepReplace(obj, 'expires_date_ms', 4077265517000); 
+deepReplace(obj, 'expires_date_ms', "4077265517000"); 
 deepReplace(obj, 'expires_date_pst', "2099-03-29 06:45:16 America/Los_Angeles"); 
 deepReplace(obj, 'is_trial_period', "false"); 
 deepReplace(obj, 'is_in_intro_offer_period', "true"); 

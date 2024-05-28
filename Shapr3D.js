@@ -41,6 +41,6 @@ obj.latest_receipt_info[0].expires_date="2099-03-29 13:45:16 Etc/GMT";
 obj.latest_receipt_info[0].expires_date_ms="4077265517000";
 obj.latest_receipt_info[0].expires_date_pst="2099-03-29 06:45:16 America/Los_Angeles";
 obj.latest_receipt_info[0].is_trial_period="false";
-obj.latest_receipt_info[0].is_in_intro_offer_period"="true";
+obj.latest_receipt_info[0].is_in_intro_offer_period="true";
 
 $done({body: JSON.stringify(obj)});

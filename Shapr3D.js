@@ -14,7 +14,7 @@ unlock Shapr:3D PRO
 [rewrite_local]
 # unlock Shapr3D
 
-^http[s]?:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Shapr3D.js
+^http[s]?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/Shapr3D.js
 [mitm]
 hostname = buy.itunes.apple.com,
 

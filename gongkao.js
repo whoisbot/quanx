@@ -9,6 +9,9 @@ Quantumult X 脚本
 ^http[s]?:\/\/api\.gongkaoleida\.com\/api\/v1\/intelligent\/checkIntelligent url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/gongkao.js
 ^http[s]?:\/\/api\.gongkaoleida\.com\/api\/v5_4_8\/user\/resume url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/gongkao.js
 
+^http[s]?:\/\/api\.gongkaoleida\.com\/api\/v4_0_2\/subscribe\/articleHot url script-response-body https://raw.githubusercontent.com/whoisbot/quanx/main/gongkao.js
+
+
 
 
 [mitm]
@@ -33,6 +36,14 @@ function modifyResponse(url, body) {
   body.data.userInfo.vipGradeList[1].vipExpire="1893456000";
 
     body.data.userInfo.vipGrade="2";      
+      
+  } 
+  else if (url.indexOf('articleHot') > -1) {
+  body.data.vipExpire="1893456000";
+
+  body.data.isVip="1";
+  body.data.vipGrade="2";
+       
       
   } 
   

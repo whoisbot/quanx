@@ -25,12 +25,15 @@ function modifyResponse(url, body) {
   
   } 
   else if (url.indexOf('resume') > -1) {
-  body.data.userInfo.vipExpire="999999";
+  body.data.userInfo.vipExpire="1893456000";
 
   body.data.userInfo.isVip="1";
   body.data.userInfo.vipGradeList[1].isVip="1";
   body.data.userInfo.vipGradeList[1].remainDays="9999999";
-  body.data.userInfo.vipGradeList[1].vipExpire="9999999";
+  body.data.userInfo.vipGradeList[1].vipExpire="1893456000";
+
+    body.data.userInfo.vipGrade="2";      
+      
   } 
   
   return body;

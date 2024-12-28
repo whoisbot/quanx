@@ -24,7 +24,7 @@ function modifyResponse(url, body) {
   body.data.isStarVip=true;
   
   } 
-  else if (url.indexOf('consume') > -1) {
+  else if (url.indexOf('resume') > -1) {
   body.data.userInfo.vipExpire="999999";
 
   body.data.userInfo.isVip="1";
